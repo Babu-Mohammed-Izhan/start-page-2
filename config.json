@@ -1,7 +1,7 @@
 {
   "squares": [
     { "name": "media",
-      "color": "red",
+      "color": "#61afef",
       "links": [
         { "name": "Spotify", "url": "https://open.spotify.com/" },
         { "name": "YoutubeMusic", "url": "https://music.youtube.com/" },
@@ -10,7 +10,7 @@
       ]
     },
     { "name": "work",
-      "color": "#26A69A",
+      "color": "#e06c75",
       "links": [
         { "name": "Github", "url": "https://github.com" },
         { "name": "Heroku", "url": "http://heroku.com/" },
@@ -18,6 +18,7 @@
       ]
     },
     { "name": "social",
+      "color": "#e5c07b",
       "links": [
         { "name": "Reddit", "url": "https://reddit.com" },
         { "name": "Unixporn Love", "url": "https://deepjyoti30.github.io/unixporn-love/" },
@@ -27,6 +28,7 @@
     },
     {
       "name": "Others",
+      "color": "#98c379",
       "links": [
         {"name": "Material Colors", "url": "http://materialuicolors.co/"},
         {"name": "Gmail", "url": "http://gmail.com/"},
@@ -35,29 +37,29 @@
       ]
     }
   ],
-  "searchEngine":"DuckDuckGo",
-  "user": "Deepjyoti",
+  "searchEngine":"Brave",
+  "user": "Pirate",
   "disableMessage": false,
   "disableDate": false,
   "disableSearchBar": false,
-  "disable24Hour": false,
-  "disableWeather": true,
-  "timeZone": "America/Los_Angeles",
+  "disable24Hour": true,
+  "disableWeather": false,
+  "timeZone": "Africa/Cairo",
   "weatherConf": {
-    "location": "Pune India",
+    "location": "Giza Egypt",
     "unit": "cel"
   },
   "settingsIcon": false,
   "style": {
-    "backgroundColor": "#212121",
+    "backgroundColor": "#282c34",
     "messageColor": "#fff",
     "dateColor": "#d9d9d9",
     "lineColor": "#fff",
     "weatherColor": "#d9d9d9",
     "searchColor": "#fff",
-    "searchBackgroundColor": "#2e2e2e",
+    "searchBackgroundColor": "#1e222a",
     "squareColor": "#9e9e9e",
-    "squareBackgroundColor": "#2e2e2e",
+    "squareBackgroundColor": "#1e222a",
     "autocompleteHighlightBackgroundColor": "#3B3B3B"
   }
 }

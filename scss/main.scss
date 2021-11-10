@@ -1,12 +1,12 @@
-$background: #212121;
-$foreground: #fff;
+$background: #282c34;
+$foreground: #abb2bf;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-$media: #4DD0E1;
-$work: #F06292;
-$social: #FFF176;
-$others: #81C784;
-$funky: #4DB6AC;
-$purple: #9575CD;
+$media: #61afef;
+$work: #e06c75;
+$social: #e5c07b;
+$others: #98c379;
+$funky: #56b6c2;
+$purple: #c678dd;
 $upvoty: #FF8A65;
 $indigo: #7986CB;
 $foxxy: #A1887F;
@@ -188,7 +188,7 @@ body {
             h4, a:hover {
                 color: $social;
             }
-            
+
         }
 
         .others {
@@ -267,7 +267,7 @@ body {
     right: 25px;
     transition: 2s ease-in;
     display: none;
-    
+
     &:hover .cog {
         fill: white;
         stroke: white;

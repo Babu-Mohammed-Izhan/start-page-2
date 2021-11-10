@@ -33,7 +33,7 @@ bgClassContainer = [
 searchEngines = {
     "Google": "https://www.google.com/search?q=",
     "DuckDuckGo": "https://duckduckgo.com/?q=",
-    "Bing": "https://www.bing.com/search?q=",
+    "Brave": "https://search.brave.com/search?q=",
     "Yahoo": "https://search.yahoo.com/search?p=",
     "Ecosia": "https://www.ecosia.org/search?q="
 }
@@ -46,7 +46,7 @@ validQuickLinks = {}
 function initBody() {
     /**
      * Function called when the body is loaded.
-     * 
+     *
      * Do everything like adding an event listener to
      * other things.
      */
@@ -71,7 +71,7 @@ function initSearchBar(jsonData) {
         searchEngine = "Google"
     }
     searchUrl = this.searchEngines[searchEngine]
-    document.getElementById(searchBarId).placeholder = `Search something on ${searchEngine}`
+    document.getElementById(searchBarId).placeholder = `${searchEngine} Search`
     document.getElementById(searchBarId).addEventListener("keypress", (event) => {
         if (event.key != 'Enter') return
 
@@ -96,7 +96,7 @@ function initSearchBar(jsonData) {
 function buildMsg() {
     /**
      * Build a nice message for the user.
-     * 
+     *
      * Following is how the message would be decided.
      * 0 - 5:59 : It's too late, take some sleep
      * 6 - 8:59 : You're up early
@@ -129,7 +129,7 @@ function buildMsg() {
 function handleMessage(userName) {
     /**
      * Handle the creation of the message
-     * 
+     *
      * Build the message based on the time of the day.
      * If the message is null then add just the username
      * Else, add the username before the message.
@@ -357,10 +357,10 @@ function createSqr(sqrData, index) {
 function getTitle(titleContent, linkHref=null) {
     /**
      * Create the title for the sqr card.
-     * 
+     *
      * The card will be optionally clicable and will open
      * a new link.
-     * 
+     *
      * If the link is not passed in the config then the title
      * will not be clickable.
      */
@@ -413,7 +413,7 @@ function inRange(number, min, max) {
 function isColorValid(color) {
     /**
      * Check if the passed color is valid.
-     * 
+     *
      * Currently supports only css color names
      * or hex colors having 3 or 6 characters.
      */
@@ -430,12 +430,12 @@ function createClass(color) {
     /**
      * Create a new class in a style and add it to
      * the head.
-     * 
+     *
      * I did check other alternatives since adding something like
      * this in the innerHTML is not a preferred way to go,
      * especially since I'm building this as an extension,
-     * however, there's no other way. 
-     * 
+     * however, there's no other way.
+     *
      * Since I also want to add hover effects, there seriously
      * is no other way to do that without adding a style or using
      * a library (cannot/don't want to do that because this is an extension).
@@ -452,7 +452,7 @@ function createClass(color) {
 function createPlaceholderStyleClass(color) {
     /**
      * Create a new class with for placeholder styling.
-     * 
+     *
      * This is pretty much a continuation of what has done preivously
      * in the createClass function.
      */
@@ -463,11 +463,11 @@ function createPlaceholderStyleClass(color) {
         color: ${color} !important;
         opacity: 1; /* Firefox */
       }
-      
+
       :-ms-input-placeholder { /* Internet Explorer 10-11 */
         color: ${color} !important;
       }
-      
+
       ::-ms-input-placeholder { /* Microsoft Edge */color: ${color} !important;}`;
     document.getElementsByTagName('head')[0].appendChild(style);
 
@@ -498,7 +498,7 @@ function addAutocompleteStyleClass(color) {
 function extractQuickLinks(passedSqrs, style) {
     /**
      * Extract the quicklinks passed in the config
-     * 
+     *
      * Cache the quicklinks passed by the user in the config JSON
      * so that they can be used as a shortcut called from the
      * search bar.
@@ -526,10 +526,10 @@ function listenForSettings() {
 function enableCog() {
     /**
      * Enable the settings cog.
-     * 
+     *
      * It will be disabled by default, however, if the user
      * wishes to enable it through the config, it will be shown.
-     * 
+     *
      * Once shown, we need to add some event listeners to it as
      * well so it works the right way.
      */

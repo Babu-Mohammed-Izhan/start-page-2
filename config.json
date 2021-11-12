@@ -53,13 +53,13 @@
   "style": {
     "backgroundColor": "#282c34",
     "messageColor": "#fff",
-    "dateColor": "#d9d9d9",
+    "dateColor": "#c8ccd4",
     "lineColor": "#fff",
-    "weatherColor": "#d9d9d9",
-    "searchColor": "#fff",
+    "weatherColor": "#c8ccd4",
+    "searchColor": "#c8ccd4",
     "searchBackgroundColor": "#1e222a",
-    "squareColor": "#9e9e9e",
+    "squareColor": "#abb2bf",
     "squareBackgroundColor": "#1e222a",
-    "autocompleteHighlightBackgroundColor": "#3B3B3B"
+    "autocompleteHighlightBackgroundColor": "#3e4451"
   }
 }

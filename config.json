@@ -39,7 +39,6 @@
       "name": "Others",
       "color": "#98c379",
       "links": [
-        { "name": "Tailwind Docs", "url": "https://tailwindcss.com/docs" },
         {
           "name": "Coding Uni",
           "url": "https://github.com/jwasham/coding-interview-university"
@@ -49,8 +48,8 @@
           "url": "https://www.classcentral.com/providers"
         },
         {
-          "name": "Udemy",
-          "url": "https://www.udemy.com/?ranMID=39197&ranEAID=0EOJOrTo2D4&ranSiteID=0EOJOrTo2D4-txbyH.S7CyErSAWaXa7rrQ&LSNPUBID=0EOJOrTo2D4&utm_source=aff-campaign&utm_medium=udemyads"
+          "name": "LeetCode",
+          "url": "https://leetcode.com/problemset/all/"
         }
       ]
     }
@@ -61,7 +60,7 @@
   "disableDate": false,
   "disableSearchBar": false,
   "disable24Hour": true,
-  "disableWeather": false,
+  "disableWeather": true,
   "timeZone": "India",
   "weatherConf": {
     "location": "Chennai India",
